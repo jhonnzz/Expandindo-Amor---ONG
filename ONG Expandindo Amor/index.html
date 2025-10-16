@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.A.S.E.A - Expandindo Amor</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho-fixo">
+        <div class="container-secao">
+            <div class="flex justify-between items-center py-3">
+                <div class="logo-organizacao">
+                    <img src="imagens/logoprin.png" class="icone-logo"></i>
+                    <span class="texto-logo">Expandindo Amor</span>
+                </div>
+                <nav class="navegacao-desktop">
+                    <ul class="menu-horizontal">
+                        <li><a href="#inicio" class="link-menu link-menu-ativo">Início</a></li>
+                        <li><a href="#sobre" class="link-menu">Sobre</a></li>
+                        <li><a href="#projetos" class="link-menu">Projetos</a></li>
+                        <li><a href="#galeria" class="link-menu">Galeria</a></li>
+                        <li><a href="#doacao" class="link-menu">Doe Agora</a></li>
+                        <li><a href="#contato" class="link-menu">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="botao-menu-mobile" id="menu-toggle">
+                    <i data-feather="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="menu-mobile">
+            <ul class="lista-menu-mobile">
+                <li><a href="#inicio" class="item-menu-mobile" style="color: #dc2626;">Início</a></li>
+                <li><a href="#sobre" class="item-menu-mobile">Sobre</a></li>
+                <li><a href="#projetos" class="item-menu-mobile">Projetos</a></li>
+                <li><a href="#galeria" class="item-menu-mobile">Galeria</a></li>
+                <li><a href="#doacao" class="item-menu-mobile">Doe Agora</a></li>
+                <li><a href="#contato" class="item-menu-mobile">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="secao-hero">
+        <div class="container-secao">
+            <div class="py-20 text-center text-white animacao-fade-in">
+                <h1 class="titulo-hero">Amar e expandir é transformar vidas.</h1>
+                <p class="subtitulo-hero">
+                    Somos a Expandindo Amor, uma ONG que acredita que a solidariedade é a semente que transforma vidas.
+                </p>
+                <div class="espacamento-horizontal inline-flex flex-col sm:flex-row">
+                    <a href="#doacao" class="botao-principal">
+                        Faça Parte
+                    </a>
+                    <a href="#sobre" class="botao-secundario">
+                        Conheça Mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="secao-padrao secao-clara">
+        <div class="container-secao">
+            <div class="texto-centralizado margem-baixo-16 animacao-fade-in">
+                <h2 class="titulo-secao">Sobre Nós</h2>
+                <div class="divisor-titulo"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden animacao-fade-in">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="imagens/logosobre.png" alt="Equipe Expandindo Amor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 md:w-1/2">
+                        <h3 class="text-2xl font-bold text-red-600 mb-4">A.A.S.E.A – Expandindo Amor</h3>
+                        <p class="text-gray-700 mb-6">
+                            A A.A.S.E.A – Associação de Assistência Social Expandindo Amor, com sede em Sumaré/SP, é uma ONG que atua nas áreas de assistência social, inclusão e desenvolvimento comunitário.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            Desde sua fundação, a Expandindo Amor já beneficiou mais de 400 famílias, mobilizou 120 voluntários ativos e realizou 25 eventos solidários nos últimos anos.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <i data-feather="target" class="w-6 h-6 text-red-600 mb-2"></i>
+                                <h4 class="font-bold text-red-600">Missão</h4>
+                                <p class="text-sm">Assistir, incluir e desenvolver grupos em vulnerabilidade social.</p>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <i data-feather="eye" class="w-6 h-6 text-orange-600 mb-2"></i>
+                                <h4 class="font-bold text-orange-600">Visão</h4>
+                                <p class="text-sm">Produzir qualidade de vida e igualdade de oportunidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria" class="secao-padrao">
+        <div class="container-secao">
+            <div class="texto-centralizado margem-baixo-16 animacao-fade-in">
+                <h2 class="titulo-secao">Nossos Momentos</h2>
+                <div class="divisor-titulo"></div>
+                <p class="descricao-secao">Cada imagem captura a essência do nosso trabalho: amor, solidariedade e transformação.</p>
+            </div>
+            
+            <div class="grade-galeria animacao-fade-in">
+                <!-- Item Ação Social -->
+                <div class="item-galeria">
+                    <img src="imagens/ação social.jpg" alt="Ação social" class="imagem-galeria">
+                    <div class="legenda-galeria">Ação social</div>
+                </div>
+                
+                <!-- Item Evento Comunitário com Carrossel -->
+                <div class="item-galeria">
+                    <div id="carousel-evento-comunitario" class="container-carrossel">
+                        <img src="imagens/evento-comu1.jpg" alt="Evento comunitário 1" class="imagem-carrossel" style="opacity: 1; z-index: 2;" />
+                        <img src="imagens/evento-comu2.jpg" alt="Evento comunitário 2" class="imagem-carrossel" style="opacity: 0; z-index: 1;" />
+                        <img src="imagens/evento-comu3.jpg" alt="Evento comunitário 3" class="imagem-carrossel" style="opacity: 0; z-index: 0;" />
+                        <button id="prev-evento-comunitario" class="botao-carrossel botao-anterior">
+                            <i data-feather="chevron-left" class="icone-carrossel"></i>
+                        </button>
+                        <button id="next-evento-comunitario" class="botao-carrossel botao-proximo">
+                            <i data-feather="chevron-right" class="icone-carrossel"></i>
+                        </button>
+                    </div>
+                    <div class="legenda-galeria">Evento comunitário</div>
+                </div>
+                
+                <!-- Item Distribuição de Alimentos com Carrossel -->
+                <div class="item-galeria">
+                    <div id="carousel-distribuicao-alimentos" class="container-carrossel">
+                        <img src="imagens/alimento1.jpg" alt="Distribuição de alimentos 1" class="imagem-carrossel" style="opacity: 1; z-index: 2;" />
+                        <img src="imagens/alimento2.jpg" alt="Distribuição de alimentos 2" class="imagem-carrossel" style="opacity: 0; z-index: 1;" />
+                        <img src="imagens/alimento3.jpg" alt="Distribuição de alimentos 3" class="imagem-carrossel" style="opacity: 0; z-index: 0;" />
+                        <button id="prev-distribuicao-alimentos" class="botao-carrossel botao-anterior">
+                            <i data-feather="chevron-left" class="icone-carrossel"></i>
+                        </button>
+                        <button id="next-distribuicao-alimentos" class="botao-carrossel botao-proximo">
+                            <i data-feather="chevron-right" class="icone-carrossel"></i>
+                        </button>
+                    </div>
+                    <div class="legenda-galeria">Distribuição de alimentos</div>
+                </div>
+                
+                <!-- Item Voluntários com Carrossel -->
+                <div class="item-galeria">
+                    <div id="carousel-voluntarios" class="container-carrossel">
+                        <img src="imagens/volu1.jpg" alt="Voluntários em ação 1" class="imagem-carrossel" style="opacity: 1; z-index: 2;" />
+                        <img src="imagens/volu2.jpg" alt="Voluntários em ação 2" class="imagem-carrossel" style="opacity: 0; z-index: 1;" />
+                        <img src="imagens/volu3.jpg" alt="Voluntários em ação 3" class="imagem-carrossel" style="opacity: 0; z-index: 0;" />
+                        <button id="prev-voluntarios" class="botao-carrossel botao-anterior">
+                            <i data-feather="chevron-left" class="icone-carrossel"></i>
+                        </button>
+                        <button id="next-voluntarios" class="botao-carrossel botao-proximo">
+                            <i data-feather="chevron-right" class="icone-carrossel"></i>
+                        </button>
+                    </div>
+                    <div class="legenda-galeria">Voluntários em ação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="secao-padrao secao-clara">
+        <div class="container-secao">
+            <div class="texto-centralizado margem-baixo-16 animacao-fade-in">
+                <h2 class="titulo-secao">Nossos Projetos</h2>
+                <div class="divisor-titulo"></div>
+                <p class="descricao-secao">Conheça algumas das ações que realizamos para transformar vidas</p>
+            </div>
+            
+            <div class="grade-galeria animacao-fade-in">
+                <!-- Projeto União Três Pontes -->
+                <div class="cartao-projeto">
+                    <img src="imagens/projeto-uniao.jpg" alt="Projeto Social União Três Pontes" class="imagem-projeto">
+                    <div class="conteudo-cartao">
+                        <h3 class="titulo-cartao">Projeto Social União Três Pontes</h3>
+                        <p class="descricao-cartao">O Projeto União Três Pontes, também chamado de Projeto Sonhar – Escolinha de Futebol União Três Pontes, é uma iniciativa da ONG Expandindo Amor (ADIEA) com sede na comunidade Três Pontes, em Sumaré/SP.</p>
+                    </div>
+                </div>
+                
+                <!-- Natal Solidário -->
+                <div class="cartao-projeto">
+                    <img src="imagens/natal.jpg" alt="Natal Solidário" class="imagem-projeto">
+                    <div class="conteudo-cartao">
+                        <h3 class="titulo-cartao">Natal Solidário</h3>
+                        <p class="descricao-cartao">Distribuição de brinquedos, cestas básicas e refeições em comunidades locais.</p>
+                        <div class="info-data">
+                            <i data-feather="calendar" class="icone-data"></i>
+                            <span class="text-sm">Dezembro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dia das Crianças -->
+                <div class="cartao-projeto">
+                    <img src="imagens/kid.jpg" alt="Dia das Crianças" class="imagem-projeto">
+                    <div class="conteudo-cartao">
+                        <h3 class="titulo-cartao">Dia das Crianças</h3>
+                        <p class="descricao-cartao">Evento comunitário com brincadeiras e lanche solidário para crianças carentes.</p>
+                        <div class="info-data">
+                            <i data-feather="calendar" class="icone-data"></i>
+                            <span class="text-sm">Outubro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Páscoa Solidária -->
+                <div class="cartao-projeto">
+                    <img src="imagens/pascoa.jpg" alt="Páscoa Solidária" class="imagem-projeto">
+                    <div class="conteudo-cartao">
+                        <h3 class="titulo-cartao">Páscoa Solidária</h3>
+                        <p class="descricao-cartao">Juntos proporcionamos para todos da comunidade três ponte no Domingo de páscoa um delicioso café da manhã e depois distribuímos o Kit Doce.</p>
+                        <div class="info-data">
+                            <i data-feather="calendar" class="icone-data"></i>
+                            <span class="text-sm">Abril</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Doação -->
+    <section id="doacao" class="secao-padrao secao-destaque">
+        <div class="container-secao">
+            <div class="texto-centralizado margem-baixo-16 animacao-fade-in">
+                <h2 class="titulo-secao text-white">Doe Agora</h2>
+                <div class="divisor-titulo" style="background-color: #fbbf24;"></div>
+                <p class="text-xl mt-4 max-w-2xl mx-auto">O pouco que você doa pode ser o muito que alguém precisa.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 animacao-fade-in">
+                <!-- Cartão PIX -->
+                <div class="cartao-doacao">
+                    <div class="cabecalho-cartao-doacao">
+                        <div class="icone-container icone-pix">
+                            <i data-feather="smartphone" class="icone-cartao icone-vermelho"></i>
+                        </div>
+                        <h3 class="titulo-cartao-doacao">Doação por PIX</h3>
+                    </div>
+                    <p class="mb-6">Faça sua doação instantaneamente usando o PIX. Todo valor é bem-vindo e fará diferença!</p>
+                    <div class="chave-pix-container">
+                        <p class="label-chave-pix">Chave PIX (CNPJ):</p>
+                        <p class="chave-pix">36.414.872.0001-43</p>
+                    </div>
+                    <button class="botao-copiar-pix" id="botao-copiar-pix">
+                        <i data-feather="copy" class="icone-copiar"></i>
+                        <span id="texto-copiar-pix">Copiar Chave PIX</span>
+                    </button>
+                </div>
+                
+                <!-- Cartão Presencial -->
+                <div class="cartao-doacao">
+                    <div class="cabecalho-cartao-doacao">
+                        <div class="icone-container icone-local">
+                            <i data-feather="map-pin" class="icone-cartao icone-amarelo"></i>
+                        </div>
+                        <h3 class="titulo-cartao-doacao">Doação Presencial</h3>
+                    </div>
+                    <p class="mb-6">Venha nos visitar e conhecer nosso trabalho. Aceitamos doações de alimentos, roupas e outros itens.</p>
+                    <div class="info-contato-doacao">
+                        <div class="item-info-doacao">
+                            <i data-feather="home" class="icone-info"></i>
+                            <p class="text-gray-700">Estrada Teodor Condiev, Nº 10, Bairro Jardim Marchissolo, Sumaré</p>
+                        </div>
+                        <div class="item-info-doacao">
+                            <i data-feather="clock" class="icone-info"></i>
+                            <p class="text-gray-700">Segunda a Sexta, das 9h às 17h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="secao-padrao secao-clara">
+        <div class="container-secao">
+            <div class="texto-centralizado margem-baixo-16 animacao-fade-in">
+                <h2 class="titulo-secao">Depoimentos</h2>
+                <div class="divisor-titulo"></div>
+                <p class="descricao-secao">O que dizem quem já foi impactado pela Expandindo Amor</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 animacao-fade-in">
+                <!-- Depoimento 1 -->
+                <div class="cartao-depoimento">
+                    <div class="estrelas">
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                    </div>
+                    <p class="texto-depoimento">"A Expandindo Amor me ajudou quando eu mais precisei. Hoje também sou voluntária."</p>
+                    <div class="autor-depoimento">
+                        <div class="avatar-depoimento avatar-vermelho">
+                            <i data-feather="user" class="icone-usuario text-red-600"></i>
+                        </div>
+                        <div>
+                            <p class="nome-autor">Maria da Penha</p>
+                            <p class="cargo-autor">Beneficiária e Voluntária</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="cartao-depoimento">
+                    <div class="estrelas">
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                    </div>
+                    <p class="texto-depoimento">"Aqui aprendi que amor se multiplica quando é compartilhado."</p>
+                    <div class="autor-depoimento">
+                        <div class="avatar-depoimento avatar-laranja">
+                            <i data-feather="user" class="icone-usuario text-orange-600"></i>
+                        </div>
+                        <div>
+                            <p class="nome-autor">Lucas Andrade</p>
+                            <p class="cargo-autor">Voluntário há 2 anos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="cartao-depoimento">
+                    <div class="estrelas">
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                        <i data-feather="star" class="estrela"></i>
+                    </div>
+                    <p class="texto-depoimento">"A ONG mudou minha visão sobre solidariedade. Todos deveriam conhecer esse trabalho."</p>
+                    <div class="autor-depoimento">
+                        <div class="avatar-depoimento avatar-amarelo">
+                            <i data-feather="user" class="icone-usuario text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <p class="nome-autor">Juliana Costa</p>
+                            <p class="cargo-autor">Doadora e Apoiadora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="secao-padrao">
+        <div class="container-secao">
+            <div class="texto-centralizado margem-baixo-16 animacao-fade-in">
+                <h2 class="titulo-secao">Entre em Contato</h2>
+                <div class="divisor-titulo"></div>
+                <p class="descricao-secao">Tem dúvidas, sugestões ou quer ser um voluntário? Fale conosco!</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 animacao-fade-in">
+                <div class="lista-contato">
+                    <!-- Endereço -->
+                    <div class="item-contato">
+                        <div class="icone-contato-container bg-vermelho-claro">
+                            <i data-feather="map-pin" class="icone-info text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="titulo-contato">Endereço</h3>
+                            <p class="texto-contato">Estrada Teodor Condiev, Nº 10, Bairro Jardim Marchissolo, Sumaré</p>
+                        </div>
+                    </div>
+                    
+                    <!-- E-mail -->
+                    <div class="item-contato">
+                        <div class="icone-contato-container bg-laranja-claro">
+                            <i data-feather="mail" class="icone-info text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="titulo-contato">E-mail</h3>
+                            <a href="mailto:expandindoamor@gmail.com" class="link-contato">expandindoamor@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Telefone -->
+                    <div class="item-contato">
+                        <div class="icone-contato-container bg-amarelo-claro">
+                            <i data-feather="phone" class="icone-info text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="titulo-contato">Telefone</h3>
+                            <p class="texto-contato">(19) 99479-9775</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Instagram -->
+                    <div class="item-contato">
+                        <div class="icone-contato-container bg-vermelho-claro">
+                            <i data-feather="instagram" class="icone-info text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="titulo-contato">Instagram</h3>
+                            <a href="https://www.instagram.com/ongexpandindo_amor/" target="_blank" rel="noopener" class="link-contato">@ongexpandindo_amor</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Horários -->
+                    <div class="tabela-horarios">
+                        <h3 class="titulo-contato">Horário de Funcionamento</h3>
+                        <div class="linha-horario">
+                            <span class="dia-horario">Segunda a Sexta</span>
+                            <span class="hora-horario">9h às 17h</span>
+                        </div>
+                        <div class="linha-horario">
+                            <span class="dia-horario">Sábado</span>
+                            <span class="hora-horario">9h às 12h</span>
+                        </div>
+                        <div class="linha-horario" style="border-bottom: none;">
+                            <span class="dia-horario">Domingo</span>
+                            <span class="hora-horario">Fechado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container-secao">
+            <div class="grade-rodape">
+                <!-- Coluna Logo -->
+                <div>
+                    <div class="logo-rodape">
+                        <img src="imagens/logoprin.png" class="icone-logo-rodape"></i>
+                        <span class="text-xl font-bold">Expandindo Amor</span>
+                    </div>
+                    <p class="slogan-rodape">Amor que transforma vidas.</p>
+                    <div class="redes-sociais-rodape">
+                        <a href="https://www.facebook.com/ExpandindoAmor/?locale=pt_BR" target="_blank" rel="noopener" class="link-rede-social">
+                            <i data-feather="facebook" class="icone-rede-social"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ongexpandindo_amor/" target="_blank" rel="noopener" class="link-rede-social">
+                            <i data-feather="instagram" class="icone-rede-social"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Coluna Links Rápidos -->
+                <div>
+                    <h3 class="titulo-coluna-rodape">Links Rápidos</h3>
+                    <ul class="lista-rodape">
+                        <li><a href="#inicio" class="link-rodape">Início</a></li>
+                        <li><a href="#sobre" class="link-rodape">Sobre Nós</a></li>
+                        <li><a href="#projetos" class="link-rodape">Projetos</a></li>
+                        <li><a href="#doacao" class="link-rodape">Doe Agora</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna Contato -->
+                <div>
+                    <h3 class="titulo-coluna-rodape">Contato</h3>
+                    <ul class="lista-rodape">
+                        <li class="item-lista-rodape">
+                            <i data-feather="map-pin" class="icone-item-rodape"></i>
+                            <span class="text-gray-400">Estrada Teodor Condiev, Nº 10, Bairro Jardim Marchissolo, Sumaré</span>
+                        </li>
+                        <li class="item-lista-rodape">
+                            <i data-feather="mail" class="icone-item-rodape"></i>
+                            <a href="mailto:expandindoamor@gmail.com" class="link-rodape">expandindoamor@gmail.com</a>
+                        </li>
+                        <li class="item-lista-rodape">
+                            <i data-feather="phone" class="icone-item-rodape"></i>
+                            <span class="text-gray-400">(19) 99479-9775</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="divisor-rodape">
+                <p>© 2025 Expandindo Amor – Amor que transforma vidas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Copiar chave PIX
+        document.addEventListener('DOMContentLoaded', function() {
+            const botaoPix = document.getElementById('botao-copiar-pix');
+            const textoPix = document.getElementById('texto-copiar-pix');
+            const chavePix = '36.414.872.0001-43';
+            
+            if (botaoPix && textoPix) {
+                botaoPix.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(chavePix).then(function() {
+                        textoPix.style.opacity = '0';
+                        setTimeout(function() {
+                            textoPix.textContent = 'Copiada com sucesso!';
+                            textoPix.style.opacity = '1';
+                            textoPix.classList.add('animate-pulse');
+                            setTimeout(function() {
+                                textoPix.textContent = 'Copiar Chave PIX';
+                                textoPix.classList.remove('animate-pulse');
+                            }, 1800);
+                        }, 200);
+                    });
+                });
+            }
+        });
+
+        // Função auxiliar para carrosséis
+        function criarCarrossel(idContainer, classImagens, idBotaoAnterior, idBotaoProximo) {
+            const imagens = document.querySelectorAll(`#${idContainer} .${classImagens}`);
+            let atual = 0;
+            
+            function mostrarImagem(indice) {
+                imagens.forEach((img, i) => {
+                    img.style.opacity = (i === indice) ? '1' : '0';
+                    img.style.zIndex = (i === indice) ? '2' : (i === (indice - 1 + imagens.length) % imagens.length ? '1' : '0');
+                });
+            }
+            
+            document.getElementById(idBotaoAnterior).addEventListener('click', function() {
+                atual = (atual - 1 + imagens.length) % imagens.length;
+                mostrarImagem(atual);
+            });
+            
+            document.getElementById(idBotaoProximo).addEventListener('click', function() {
+                atual = (atual + 1) % imagens.length;
+                mostrarImagem(atual);
+            });
+            
+            mostrarImagem(atual);
+        }
+
+        // Inicializar carrosséis
+        criarCarrossel('carousel-voluntarios', 'imagem-carrossel', 'prev-voluntarios', 'next-voluntarios');
+        criarCarrossel('carousel-distribuicao-alimentos', 'imagem-carrossel', 'prev-distribuicao-alimentos', 'next-distribuicao-alimentos');
+        criarCarrossel('carousel-evento-comunitario', 'imagem-carrossel', 'prev-evento-comunitario', 'next-evento-comunitario');
+
+        // Menu mobile
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Animação de fade-in ao rolar
+        const elementosFade = document.querySelectorAll('.animacao-fade-in');
+        
+        const fadeAoRolar = () => {
+            elementosFade.forEach(elemento => {
+                const topoElemento = elemento.getBoundingClientRect().top;
+                const alturaJanela = window.innerHeight;
+                
+                if (topoElemento < alturaJanela - 100) {
+                    elemento.style.opacity = '1';
+                    elemento.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Estado inicial dos elementos fade
+        elementosFade.forEach(elemento => {
+            elemento.style.opacity = '0';
+            elemento.style.transform = 'translateY(20px)';
+            elemento.style.transition = 'opacity 1s ease, transform 1s ease';
+        });
+
+        // Executar ao carregar e rolar
+        window.addEventListener('load', fadeAoRolar);
+        window.addEventListener('scroll', fadeAoRolar);
+
+        // Inicializar ícones Feather
+        feather.replace();
+    </script>
+</body>
+</html>
